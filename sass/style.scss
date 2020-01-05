@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+
+body {
+	color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.container-padding {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+header {
+  background: src="images/header-background.png";
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-inverse {
+  background: transparent;
+  border: none;
+  .container {
+    border-bottom: 1px #fff solid;	
+    padding: 15px 0 15px 15px;
+  }
+
+  .nav {
+    float: right;
+    font-weight: bold;
+  }
+
+  .navbar-nav>li>a {
+    color: $text-color-bright;
+    transition: 0.5s;
+    font-size: 13px;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .navbar-toggle {
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      .icon-bar {
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding: 15px 0;
+  }
+}
+
+.hero {
+height: calc(100vh - 80px);
+display: flex;
+align-items: center;
+justify-content: center;
+  h1 {
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 22px;
+    margin-bottom: 100px;
+  }
+}
+
+.btn {
+  border-radius: 2px;
+  @include box-size(200px, 50px);
+font-size: 13px;
+font-weight: bold;
+  background-color: $accent-color;
+  text-transform: uppercase;
+  transition: 0.5s;
+  &:hover {
+    background-color: #d73434;	
+  }
+}
